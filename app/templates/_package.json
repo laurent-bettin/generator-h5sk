@@ -1,0 +1,14 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-csso": "^0.2.6",
+    "wiredep": "^1.4.3",
+    "cdnizer": "^0.2.5"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

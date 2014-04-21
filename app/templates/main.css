@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* =============================================================================
+
+    Few default class name
+        #header {}
+        #footer {}
+        #main-nav {}
+        #aside-nav {}
+        #secondary-nav {}
+        #breadcrumb {}
+        #sidebar {}
+        #contact {}
+        .aside {}
+        .error {}
+        .succes {}
+        .warnig {}
+        .info {}
+        .more {}
+        .block {}
+
+    Helpers if needed
+        .clear-left { clear:left }
+        .clear-right { clear:right }
+        .clear-both { clear:both }
+        .valign-middle { vertical-align:middle }
+        .valign-top { vertical-align:top }
+        .valign-bottom { vertical-align:bottom }
+        .invisible { visibility:hidden }
+        .suffix-a { margin-right:XXpx }
+        .prefix-a { margin-left:XXpx }
+
+========================================================================== */
+/* =============================================================================
+    Default styles
+    ========================================================================== */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font: 1.4em/1.5 Helvetica, Arial, sans-serif;
+}
+
+/*
+ *  http://www.alsacreations.com/astuce/lire/43-comment-dfinir-lapparence-de-ses-liens.html
+ */
+a:visited {
+    color: gray;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #da0019;
+}
+
+/*http://soqr.fr/vertical-rhythm/
+/* =============================================================================
+   Titles
+   ========================================================================== */
+h1 {
+    font-size: 1.8571em; /* equiv 26px */
+    line-height: 1.6154em;
+    margin: 0 0 .8077em;
+}
+
+h2 {
+    font-size: 1.7143em; /* equiv 24px */
+    line-height: 1.75em;
+    margin: 0 0 .875em;
+}
+
+h3 {
+    font-size: 1.5714em; /* equiv 22px */
+    line-height: 1.909em;
+    margin: 0 0 .9545em;
+}
+
+h4 {
+    font-size: 1.4286em; /* equiv 20px */
+    line-height: 1.05em;
+    margin: 0 0 1.05em;
+}
+
+h5 {
+    font-size: 1.2857em; /* equiv 18px */
+    line-height: 1.1667em;
+    margin: 0 0 1.1667em;
+}
+
+h6 {
+    font-size: 1.1429em; /* equiv 16px */
+    line-height: 1.3125em;
+    margin: 0 0 1.3125em;
+}
+
+/* =============================================================================
+   Margins
+   ========================================================================== */
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption {
+    font-size: 1em; /* equiv 14px */
+    line-height: 1.5em;
+    margin: 0 0 1.5em;
+}
+
+table {
+    margin-bottom: 1.5em;
+}
+
+/* avoid margins on nested elements */
+li p,
+li ul,
+li ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* =============================================================================
+   Font size variations
+   ========================================================================== */
+.smaller {
+    font-size: .7143em; /* equiv 10px */
+    line-height: 2.1em;
+    margin: 2.1em 0;
+}
+
+.small {
+    font-size: .8571em; /* equiv 12px */
+    line-height: 1.75em;
+    margin: 1.75em 0;
+}
+
+.big {
+    font-size: 1.1429em; /* equiv 16px */
+    line-height: 1.3125em;
+    margin: 1.3125em 0;
+}
+
+.bigger {
+    font-size: 1.2857em; /* equiv 18px */
+    line-height: 1.1667em;
+    margin: 1.1667em 0;
+}
+
+.biggest {
+    font-size: 1.4286em; /* equiv 20px */
+    line-height: 1.05em;
+    margin: 1.05em 0;
+}
+
+/* =============================================================================
+   form
+   ========================================================================== */
+/*
+* Allow only vertical resizing of textareas.
+*/
+textarea {
+    resize: vertical;
+}
+
+/* =============================================================================
+   images
+   ========================================================================== */
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* =============================================================================
+   various
+   ========================================================================== */
+em {
+    font-style: italic;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* =============================================================================
+    Helpers
+    ========================================================================== */
+/*
+ *  Micro clear fix http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* spacing helpers
+p,m = padding,margin
+a,t,r,b,l = all,top,right,bottom,left
+s,m,l,n,0,lt = small(< 10px),medium(10px>x<20px),large(20px>x<30px), zero or none(0), <0
+source https://github.com/stubbornella/oocss/blob/master/core/spacing/space.css
+*/
+.ma0 {
+    margin: 0 !important;
+}
+
+.pa0 {
+    padding: 0 !important;
+}
+
+/* =============================================================================
+   Layout
+   ========================================================================== */
+.wrapper {
+    overflow: hidden;
+}
+
+.grid-a {
+    float: left;
+}
+
+.grid-a {
+    width: 200px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+    Print styles.
+    Inlined to avoid required HTTP connection: h5bp.com/r
+    ====================================================================== */
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        font: 9pt Arial;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    pre,
+    blockquote {
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

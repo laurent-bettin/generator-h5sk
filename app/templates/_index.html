@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Titre</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Robots" content="all" />
+
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <% if (includeModernizr) { %>
+        <!-- build:js js/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+        <% } if (oldIeSupport) { %>
+        <!-- Alternative to conditional stylesheets
+        http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+        <!--[if IE 7]>
+            <link rel="stylesheet" media="screen" href="css/fixIE7.css" />
+        <![endif]-->
+        <!--[if IE 8]>
+            <link rel="stylesheet" media="screen" href="css/fixIE8.css" />
+        <![endif]-->
+        <% } %>
+    </head>
+
+    <body>
+
+        <!-- container -->
+        <div class="container">
+        </div>
+        <!-- container -->
+        <% if (oldIeSupport) { %>
+        <!--[if (gte IE 7)&(lte IE 8)]>
+            <script src="js/vendor/IE9.js"></script>
+        <![endif]-->
+        <% } %>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+
+    </body>
+
+</html>

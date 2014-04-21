@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-h5sk' ]; then cd .. && eval "mv $currentfolder generator-h5sk" && cd generator-h5sk; fi
+

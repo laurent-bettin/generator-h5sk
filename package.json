@@ -1,0 +1,38 @@
+{
+  "name": "generator-h5sk",
+  "version": "0.0.0",
+  "description": "Webapp generator base on html5-starter-kit ",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "laurent-bettin/generator-h5sk",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "https://github.com/laurent-bettin"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "h5sk-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "chalk": "~0.4.0",
+    "wiredep": "^1.4.4"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0",
+    "gulp": ">=3.5.0"
+  }
+}
