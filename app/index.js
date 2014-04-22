@@ -74,7 +74,6 @@ var H5skGenerator = yeoman.generators.Base.extend({
     this.mkdir('app');
     this.mkdir('app/css');
     this.mkdir('app/js');
-    this.mkdir('app/js/vendor');
     this.mkdir('app/images');
 
     this.copy('gulpfile.js', 'gulpfile.js');
@@ -88,6 +87,7 @@ var H5skGenerator = yeoman.generators.Base.extend({
     this.copy('main.js', 'app/js/main.js');
 
     if(this.oldIeSupport) {
+      this.mkdir('app/js/vendor');
       this.copy('fixIE7.css', 'app/css/fixIE7.css');
       this.copy('fixIE8.css', 'app/css/fixIE8.css');
       this.copy('IE9.js', 'app/js/vendor/IE9.js');
