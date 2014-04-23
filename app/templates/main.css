@@ -29,6 +29,15 @@
         .suffix-a { margin-right:XXpx }
         .prefix-a { margin-left:XXpx }
 
+    Few media queries
+    >640
+    @media screen and (min-width: 641px) {}
+
+    >=1280
+    @media screen and (min-width: 1280px) {}
+
+    <=640
+    @media screen and (max-width: 640px) {}
 ========================================================================== */
 /* =============================================================================
     Default styles
@@ -128,6 +137,18 @@ li ol {
 }
 
 /* =============================================================================
+   Tables
+   ========================================================================== */
+th {
+    text-align: left;
+}
+
+th,
+td {
+    vertical-align: top;
+}
+
+/* =============================================================================
    Font size variations
    ========================================================================== */
 .smaller {
@@ -176,6 +197,21 @@ textarea {
 img {
     height: auto;
     max-width: 100%;
+    vertical-align: middle;
+}
+
+img.float-left {
+    margin-right: .9em;
+    margin-top: .9em;
+}
+
+img.float-right {
+    margin-left: .9em;
+    margin-top: .9em;
+}
+
+img[class^="float-"]:first-child {
+    margin-top: 0;
 }
 
 /* =============================================================================
